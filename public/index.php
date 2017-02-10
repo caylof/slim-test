@@ -1,7 +1,7 @@
 <?php
 
-require __DIR__.'/../vendor/autoload.php';
-require __DIR__.'/../bootstrap/autoload.php';
+$loader = require __DIR__.'/../vendor/autoload.php';
+$loader->addPsr4('app\\', __DIR__.'/../app');
 
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
